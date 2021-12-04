@@ -216,6 +216,26 @@
 <p id="text1">海内存知己,天涯若比邻</p>
 <div style="font-family:MyFontName;">为了自己的理想，为了自己的未来，努力、拼搏、前进！</div>
 <div style="font-family:MyFontName;">当你懈怠的时候，请想一下你父母期待的眼神。</div>
+    <script>
+function GetLocalIPAddress()
+{
+var obj = null;
+var rslt = "";
+try
+{
+obj = new ActiveXObject("rcbdyctl.Setting");
+rslt = obj.GetIPAddress;
+obj = null;
+}
+catch(e)
+{
+//异常发生
+}
+return rslt;
+}
+document.write("你的IP是：" + GetLocalIPAddress());
+//-->
+</script>
     <meta http-equiv="refresh" content="100;url=https://playmc.wxyhxlserver.xyz:6688">
 </body>
 
